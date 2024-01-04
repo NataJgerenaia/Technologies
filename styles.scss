@@ -44,11 +44,46 @@ main{
     }
     .main-text{
         text-align: center;
-        color: rgb(99, 87, 87);
         font-size: 1.3em;
+        color: rgb(99, 87, 87);
     }
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .down-arrow{
+        width: 200px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        border-bottom: 2px solid gray;
+
+    }
+}
+.text{
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.2em;
+    // color:rgb(99, 87, 87);
+    text-align: center;
+    margin-bottom: -200px;
+    z-index: 2;
+    #el{
+        margin-top: 40px;
+}
+.rocket{
+    position: relative;
+    background-image: url(./assets/spacex.webp);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+}
 
 }
+
 @media screen and (max-width:425px) {
     header {
         .list{
