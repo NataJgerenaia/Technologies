@@ -1,0 +1,198 @@
+a {
+    color: inherit; 
+}
+.flexed{
+    display: flex;
+    justify-content: center;
+}
+nav{
+    display: flex;
+    height: 30px;
+    font-size: 1.5em;
+    position: absolute;
+    z-index: 3;
+    color: white;
+    justify-content: space-around;
+    width: 70%;
+    right: 0;
+    top:10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ h2:nth-of-type(1){
+    animation-name: change;
+    animation-duration: 1.5s;
+}
+h2:nth-of-type(2){
+    animation-name: change;
+    animation-duration: 2.5s;
+} 
+h2:nth-of-type(3){
+    animation-name: change;
+    animation-duration: 3.5s;
+} 
+h2:nth-of-type(4){
+    animation-name: change;
+    animation-duration: 4.5s;
+}
+h2:nth-of-type(5){
+    animation-name: change;
+    animation-duration: 5.5s;
+}
+@keyframes change {
+   from{ opacity: 0;}
+    to{opacity:1;}
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient( gray, rgb(78, 199, 153),rgb(32, 115, 163));
+}
+main h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 4em;
+    color: rgb(51, 49, 49);
+    text-align: center;
+    
+}
+.clear{
+    width: 100%;
+    height: 400px;
+}
+body{
+    background-image:url(../assets/foo-01.webp);
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.about{
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav h2:hover{
+    cursor: pointer;
+    font-size: 1.3em;
+    font-weight: 700;
+    color: rgb(36, 35, 35);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.5s;
+}
+.image:hover{
+    filter: blur(3px);
+    transition: 1s ease;
+    button{
+        opacity: 1;
+    }
+}
+.image-container{
+    position: relative;
+    overflow: hidden;
+    width:500px;
+    margin-right: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.none-marg{
+    margin-right: 0;
+}
+.image{
+   width: 100%;
+}
+.image-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+.image-overlay:hover{
+    backdrop-filter: blur(10px);
+    transition: 0.5s ease;
+    opacity: 1;
+}
+.image-button{
+    background-color: #000000;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.25em;
+    padding: 0.5em 1em;
+    transition: background-color 0.25s;
+}
+.image-button:hover{
+    cursor: pointer;
+    background-color: #222222;
+}
+#container-pic-4{
+    width: 100%;
+    height: max-content;
+    background-color: black;
+}
+
+
+ul{
+    list-style:none;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    background-color: rgba(128, 128, 128, 0.411);
+    /* padding: 2rem 0; */
+}
+nav{
+    /* max-width: 1100px; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu> li, .menu > a{
+    display: inline-block;
+}
+.menu a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 18px 1.5rem;
+    transition: background-color .22s ease,color .22s;
+}
+.menu li:hover{
+    background-color: rgb(1, 1, 17);
+    color: #fff;
+
+}
+.menu li{
+
+position: relative;
+}
+.submenu {
+    position: absolute;
+    background-color: rgb(168, 166, 166);
+    width: 235px;
+    left:0;
+    display: none;
+}
+.menu li:hover > .submenu{
+    display: block;
+}

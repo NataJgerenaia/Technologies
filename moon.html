@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+   <link rel="stylesheet" href="styles/moon.css">
+   <link rel="stylesheet" href="styles/reset.css">
+   <script src="./script.js"></script>
+   <link rel="icon" href="../assets/icons.png">
+   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+   <title>Technologies</title>
+</head>
+<body>
+  <header>
+        <div class="logo-text">
+          <div class="go-back-cont">
+            <a href="home.html"> 
+              <div id="go-back"></div>
+            </a> 
+            <h2>MOON</h2>
+            
+          </div>
+          <div class="logo-nasa">
+            <img src="./assets/nasa-logo.webp" alt="">
+          </div>
+        </div>
+  </header>
+  <video width="100%" height="100%" autoplay muted>
+    <source src="./assets/video/Artemis-logo-reveal-1080p.mp4" type="video/mp4">
+  </video>
+
+  <div id="text">
+     <p>With Artemis missions, NASA will land the first woman and first person of color on the Moon, using innovative technologies to explore more of the lunar surface than ever before. We will collaborate with commercial and international partners and establish the first long-term presence on the Moon. Then, we will use what we learn on and around the Moon to take the next giant leap: sending the first astronauts to Mars.</p>
+  </div>
+  <div class="text-blue">
+     <h1>WHY WE ARE GOING TO THE MOON</h1>
+     <p>We’re going back to the Moon for scientific discovery, economic benefits, and inspiration for a new generation of explorers: the Artemis Generation. While maintaining American leadership in exploration, we will build a global alliance and explore deep space for the benefit of all.</p>
+     <div id="arrow">&#9650;</div>
+  </div>
+  <div id="black">
+    <div>
+      <img src="./assets/discovery.webp" alt="">
+      <div class="white">
+        <h2>DISCOVERY</h2>
+        <span class="plus-1" ondblclick="toggleText()">+</span>
+      </div>
+      <div id="text-content1">
+        With Artemis, we’re building on more than 50 years of exploration experience to reignite America’s passion for discovery.
+      </div>
+    </div>
+
+    <div class="img-white-text">
+      <img src="./assets/economic.webp" alt="">
+      <div class="white">
+        <h2> ECONOMIC <br> OPPORTUNITY </h2>
+        <span class="plus-2" ondblclick="toggleText()">+</span>
+      </div>
+      <div id="text-content2">
+        Artemis missions enable a growing lunar economy by fueling new industries, supporting job growth, and furthering the demand for a skilled workforce.    </div>
+    </div>
+
+
+
+    <div class="img-white-text">
+      <img class="img-no" src="./assets/inspiration.webp" alt="">
+      <div class="white">
+        <h2>INSPIRATION FOR <br> A NEW GENERATION</h2>
+        <span class="plus-3" ondblclick="toggleText()">+</span>
+      </div>
+      <div id="text-content3">
+        We will explore more of the Moon than ever before with our commercial and international partners. Along the way, we will engage and inspire new audiences – we are the Artemis Generation.
+    </div>
+
+  </div>
+</div>
+<div class="img-on-text">
+  <img class="img-starship" src="./assets/how.webp" alt="">
+  <p><span class="how">HOW</span> <br> WE ARE GOING <br> TO THE MOON</p>
+</div>
+
+<div class="text-blue blue-back">
+<p>We will build an Artemis Base Camp on the surface and the Gateway in lunar orbit. These elements will allow our robots and astronauts to explore more and conduct more science than ever before.</p> 
+ <!-- <div id="arrow">&#9650;</div> -->
+</div>
+
+  
+  
+  <script>
+    $(document).ready(function() {
+        $('#arrow').on('click', function() {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 'slow');
+        });
+        $('.plus-2').click(function() {
+           $('#text-content2').toggle();
+        });
+        $('.plus-3').click(function() {
+           $('#text-content3').toggle();
+        });
+        $('.plus-1').click(function() {
+           $('#text-content1').toggle();
+        });
+        
+    })
+    
+</script>
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

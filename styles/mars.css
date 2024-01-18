@@ -1,0 +1,278 @@
+body {
+    background-color: black;
+}
+  
+header {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header h1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 1.2em;
+    color: white;
+    margin-left: 10px;
+    height: 25px;
+    border-bottom: 1px solid rgb(167, 164, 164);
+}
+  header img {
+    width: 120px;
+    margin-left: 50px;
+  }
+  header .list {
+    color: rgb(167, 164, 164);
+    display: flex;
+    width: 350px;
+    justify-content: space-around;
+    font-family: "Josefin Sans", sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 1.2em;
+    margin-right: 50px;
+  }
+  header .menu {
+    display: none;
+  }
+  
+  main img {
+    width: 100vw;
+  }
+  main .bg-cont {
+    position: relative;
+    background-image: url(../assets/mars.png);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+  }
+  main .main-text {
+    text-align: center;
+    font-size: 1.3em;
+    color: rgb(99, 87, 87);
+  }
+  
+  #container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #container #down-arrow {
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    border-bottom: 2px solid gray;
+    animation-name: movearrow;
+    animation-duration: 3s;
+    cursor: pointer;
+  }
+  @keyframes movearrow {
+    from {
+      margin-top: -200px;
+    }
+    to {
+      margin-top: 20px;
+    }
+  }
+  
+  .quote {
+    font-family: "Josefin Sans", sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: rgb(99, 87, 87);
+    font-size: 1.2em;
+    text-align: center;
+    top: 140px;
+    position: absolute;
+  }
+  .quote h3 {
+    margin-top: 40px;
+  }
+  
+  .rocket {
+    margin-top: 50px;
+    position: relative;
+  }
+  .rocket .img-rocket {
+    width: 100vw;
+    background-image: url(../assets/spacex.webp);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+  }
+  
+  #go-back {
+    width: 20px;
+    height: 20px;
+    background-image: url(../assets/back.png);
+    background-size: cover;
+  }
+  
+  .go-back-text {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+  
+  span {
+    color: gray;
+  }
+  
+  .data {
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  .data .dat {
+    border-bottom: 1px solid white;
+    height: 40px;
+    margin-bottom: 20px;
+  }
+  .data .left {
+    width: 50%;
+    text-align: end;
+  }
+  .data .right {
+    margin-right: 5px;
+    width: 50%;
+  }
+  
+  .space-x {
+    width: 100%;
+    height: 400px;
+    background-image: url(../assets//rocket.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  section {
+    display: flex;
+  }
+  section .mars-pic {
+    width: 50%;
+    height: 600px;
+    background-image: url(../assets/marspic.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  section .paragraph-data {
+    width: 50%;
+    flex: 1;
+    margin-top: 20px;
+  }
+  section .paragraph-data h2,
+  section .paragraph-data p {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+  
+  #sec-2 .starship {
+    height: 600px;
+    width: 100%;
+    background-image: url(../assets/rocket.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  #sec-2 .starship .starsh-text {
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+    bottom: 40px;
+  }
+  #sec-2 .starship .starsh-text h3 {
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-size: 1.8em;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+  #sec-2 .starship .starsh-text p {
+    line-height: 25px;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+  
+  @media screen and (max-width: 425px) {
+    header .list {
+      display: none;
+    }
+    header .menu {
+      display: block;
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+      background-image: url(../assets/menu.png);
+      background-repeat: none;
+    }
+    header img {
+      margin-left: 10px;
+    }
+    header #go-back {
+      width: 20px;
+      height: 20px;
+      background-image: url(../assets/back.png);
+      background-size: cover;
+    }
+    header .go-back-text {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+      margin-left: 5px;
+    }
+    main .main-text {
+      position: absolute;
+      top: 200px;
+      margin-left: 10px;
+      font-family: "Josefin Sans", sans-serif;
+      font-family: "Plus Jakarta Sans", sans-serif;
+    }
+    main .main-text h1 {
+      font-size: 2em;
+    }
+    main .main-text h2 {
+      font-size: 0.9em;
+      padding-top: 15px;
+      padding-bottom: 5px;
+    }
+    .container-2 {
+      display: flex;
+      flex-direction: column;
+    }
+    section {
+      flex-direction: column;
+    }
+    section .mars-pic {
+      width: 100%;
+      background-position: right;
+      margin-left: -100px;
+    }
+    section .paragraph-data {
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-top: 50px;
+      width: 100%;
+    }
+    section .paragraph-data h2 {
+      font-weight: 900;
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+    section .paragraph-data p {
+      line-height: 25px;
+    }
+  }
+  
