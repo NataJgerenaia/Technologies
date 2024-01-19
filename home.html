@@ -10,6 +10,7 @@
     <title>Technologies</title>
 </head>
 <body>
+  <div id="arrow">&#9650;</div>
     <header>
       <nav>
         <ul class="menu">
@@ -23,7 +24,7 @@
           </li>
           <li><a href="#">In Robotic</a>
             <ul class="submenu">
-              <li><a href="#">Humanoid Robot</a></li>
+              <li><a href="robot.html">Humanoid Robot</a></li>
               <li><a href="#">Robotic Cars</a></li>
             </ul>
           </li>
@@ -90,7 +91,7 @@
         <div class="flexed">
           <div class="image-container">
             <div class="image-overlay">
-              <a href="#" class="image-button">Mars</a>
+              <a href="#" class="image-button">Space Tourism</a>
             </div>
             <img class="image" src="./assets/toru.png" alt="">
           </div>
@@ -108,6 +109,16 @@
   
       </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+      $('#arrow').on('click', function() {
+          $('html, body').animate({
+              scrollTop: 0
+          }, 'slow');
+      });
+    })
+    </script>
      
 
 

@@ -32,10 +32,7 @@ header h1 {
     font-size: 1.2em;
     margin-right: 50px;
   }
-  header .menu {
-    display: none;
-  }
-  
+
   main img {
     width: 100vw;
   }
@@ -48,8 +45,13 @@ header h1 {
   }
   main .main-text {
     text-align: center;
-    font-size: 1.3em;
+    font-size: 2.5em;
     color: rgb(99, 87, 87);
+    position: absolute;
+    bottom: 150px;
+    left: 50px;
+    text-align: center;
+  
   }
   
   #container {
@@ -77,14 +79,19 @@ header h1 {
       margin-top: 20px;
     }
   }
-  
+  #centered{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .quote {
     font-family: "Josefin Sans", sans-serif;
     font-family: "Plus Jakarta Sans", sans-serif;
-    color: rgb(99, 87, 87);
+    color: rgb(19, 18, 18);
     font-size: 1.2em;
     text-align: center;
     top: 140px;
+    max-width: 550px;
     position: absolute;
   }
   .quote h3 {
@@ -162,11 +169,20 @@ header h1 {
     background-image: url(../assets/marspic.png);
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 600px;
   }
   section .paragraph-data {
     width: 50%;
+    padding: 20px;
     flex: 1;
     margin-top: 20px;
+  }
+  .paragraph-data h2{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  .paragraph-data  p {
+    line-height: 25px;
   }
   section .paragraph-data h2,
   section .paragraph-data p {
@@ -190,6 +206,7 @@ header h1 {
     padding-right: 20px;
     position: absolute;
     bottom: 40px;
+    max-width: 600px;
   }
   #sec-2 .starship .starsh-text h3 {
     margin-bottom: 20px;
@@ -210,6 +227,9 @@ header h1 {
     header .list {
       display: none;
     }
+    main .main-text{
+      font-size: 1.1em;
+    }
     header .menu {
       display: block;
       width: 30px;
@@ -217,6 +237,10 @@ header h1 {
       margin-right: 10px;
       background-image: url(../assets/menu.png);
       background-repeat: none;
+    }
+    .quote{
+      padding: 20px;
+      max-width: 370px;
     }
     header img {
       margin-left: 10px;
@@ -265,6 +289,9 @@ header h1 {
       padding-right: 20px;
       margin-top: 50px;
       width: 100%;
+      font-size: 0.8em;
+      line-height: 15px;
+      overflow-x: hidden;
     }
     section .paragraph-data h2 {
       font-weight: 900;
@@ -275,4 +302,19 @@ header h1 {
       line-height: 25px;
     }
   }
+  #arrow {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #d3a971;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1;
+}
   

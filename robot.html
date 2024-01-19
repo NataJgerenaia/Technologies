@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/robot.css">
+    <link rel="icon" href="../assets/icons.png">
+    <title>Technologies</title>
+</head>
+<body>
+    <div id="arrow">&#9650;</div> 
+
+    <div id="blue-white">
+        <div class="img-text">
+            <div class="robot-img"></div>
+            <div class="text">
+                <div class="detail"></div>
+                <h2> Robot Are The Future</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sit dicta voluptate rerum, dolorem voluptatibus repellat necessitatibus tenetur id consectetur esse impedit animi obcaecati architecto!</p>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="cont">
+            <div class="text2">
+                <h2 class="fade-text">The Robots Are Coming</h2>
+                <p>There's plenty of talk that robots can act as replacements for warehouse employees. But items have to be grabbed elsewhere , and Preferred Networks Inc. has an idea for a place covered with clothing and general filth: the home.</p>
+            </div>        
+            <div class="bg-robot"> 
+               <div class="background">
+                  <div class="robot-2"></div>
+               </div>
+            </div> 
+        </div>
+
+
+
+
+
+    </main>
+    
+
+    
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+                $(document).ready(function () {
+             $('#arrow').on('click', function() {
+                 $('html, body').animate({
+                     scrollTop: 0
+                 }, 'slow');
+             });
+             $('#arrow').on('click', function() {
+                 $('html, body').animate({
+                     scrollTop: 0
+                 }, 'slow');
+             });
+             function animateText() {
+           $('.fade-text').fadeIn(1000).delay(2000).fadeOut(1000, animateText);
+
+
+
+             }
+             animateText();
+            });
+   
+
+    </script>
