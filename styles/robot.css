@@ -1,6 +1,32 @@
 body{
     background-color: black;
 }
+header{
+    background-color: rgb(210, 228, 130);
+    display: flex;
+    height: 50px;
+}
+.go-back-cont h2{
+    line-height: 25px;
+    border-bottom: 2px solid black;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: 1.4em;
+}
+.go-back-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header #go-back {
+    width: 20px;
+    height: 20px;
+    background-image: url(../assets/left-arrow.png);
+    background-size: cover;
+    margin-left: 10px;
+    margin-right: 10px;
+}
     #arrow {
     position: fixed;
     bottom: 20px;
@@ -102,25 +128,25 @@ body{
     position: relative;
 }
 .background{
-    width: 400px;
-    height: 400px;
+    width: 600px;
+    height: 600px;
     background-image: url(../assets/background.jpg);
     background-size: cover;
     position: absolute;
     right: 50px;
     top: 20%;
-    border-radius: 200px;
+    border-radius: 300px;
 }
 .robot-2{
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
     background-image: url(../assets/robot2.webp);
     background-size: cover;
     background-position: center;
-    border-radius: 150px;
+    border-radius: 250px;
     position: absolute;
     top: 30%;
 }
 @media screen and (max-width:425px){
-    
+
 }
